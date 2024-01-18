@@ -1,0 +1,35 @@
+{
+  "name": "Poke-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "platforms": ["ios", "android", "web"],
+"cordova": {
+  "preferences": {
+    "ScrollEnabled": "false"
+      }
+    },
+  "capacitor": {
+      "ios": {
+        "id": "com.cepr.pokeapp"
+      },
+      "android": {
+        "id": "com.cepr.pokeapp"
+      }
+    },
+    "serve": {
+      "host": "localhost",
+      "port": 8100,
+      "serverLogging": "true",
+      "livereload": true,
+      "hmr": true,
+      "open": true,
+      "browser": "chrome"
+    },
+    "build": {
+      "optimizationLevel": "prod",
+      "sourceMap": true,
+      "prod": false
+    }
+}

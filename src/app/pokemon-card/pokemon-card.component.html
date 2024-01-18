@@ -1,0 +1,31 @@
+
+<ion-content>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end">
+    <ion-fab-button (click)="list()">
+      <span class="material-symbols-outlined">
+        refresh
+        </span>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-grid>
+      <ion-row *ngFor="let pokemon of pokemons;">
+      <ion-col>
+        <div class="card-container">
+        <ion-card style="background-color: #5db9ff;" [style.background-color]="colorArray[pokemon.type]">
+          <div class="img-container">
+              <img alt="{{pokemon.name}}" src="{{pokemon.sprite}}" />
+           </div>
+          <ion-card-header>
+            <ion-card-title>
+               <div class="title-container">{{pokemon.name}}</div>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

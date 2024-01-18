@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --ion-color-primary: #454545;
+  --ion-color-secondary: #007bff;
+  --ion-color-tertiary: #32db64;
+  --ion-color-warning: #f53d3d;
+}
+
+body{
+  background-color: var(--ion-color-primary);
+  height: 98vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
